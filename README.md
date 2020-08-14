@@ -12,10 +12,10 @@ Directories content
 
 COMPILATION
 ===========
-The program was developed on NIC4 Ceci Linux computer cluster of ULiège : http://www.ceci-hpc.be/ using Intel Fortan v14 compiler
+The program was developed on NIC4 Ceci Linux computer cluster of ULiège : http://www.ceci-hpc.be/ using Intel Fortan v14 compiler. Newer versions of the compiler should work but have not been tested.
 
 https://software.intel.com/content/www/us/en/develop/tools/compilers/fortran-compilers.html
-Newer versions of the compiler should work but have not been tested.
+
 
 
 CDFLIB Probability library
@@ -23,21 +23,24 @@ CDFLIB Probability library
 CDFLIB, a FORTRAN90 code which evaluates the cumulative density function (CDF) associated with common probability distributions, by Barry Brown, James Lovato, Kathy Russell.
 Downloaded from https://people.sc.fsu.edu/~jburkardt/f_src/cdflib/cdflib.html
 
-To compile the CDFLIB library and create the cdflib.a file place yourself in the cdflib subdirectory  and execute the script ./create_cdflib.sh
+To create the **cdflib.a** library execute the script **./create_cdflib.sh** in the cdflib directory.
 		
 
 Main program compilation
 ------------------------
 The cdflib.a file must exist in cdflib subdirectory.
-The list of source files to be compiled is contained in "sourcesall.dat" file.
-Place yourself in the main directory and execute the bash script ./compile.sh
-The executable most.out will be created.
+The list of source files to be compiled is contained in **sourcesall.dat** file.
+
+Execute the bash script **./compile.sh** in the main directory.
+
+The executable **most.out** will be created.
 
 Main program execution
 ----------------------
-Calculations parameter are located in parameters.dat file
-./run.sh  calculates the month defined in parameters.dat
-./run_all_months.sh calculates 12 months from jan. to dec.
+Calculations parameters are located in **parameters.dat** file
+
+- ./run.sh  calculates the month defined in parameters.dat
+- ./run_all_months.sh calculates 12 months from jan. to dec.
 
 MODULES
 -------
