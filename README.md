@@ -3,19 +3,17 @@ Model of Seed Transfer
 
 Directories content
 ===================
-most : *.f90 source files, scripts, compiled and linked program
-  |
-  |--------> cdflib library : see below
-  |--------> modules : compiled *.mod files
-  |--------> inputdata : input data files read by most execution
-  |--------> outputdata : output data files with results of calculations
+- main directory : *.f90 source files, scripts, compiled and linked program
+  - --------> cdflib library : see below
+  - --------> modules : compiled *.mod files
+  - --------> inputdata : input data files read by most execution
+  - --------> outputdata : output data files with results of calculations
 
 
 COMPILATION
 ===========
-The program was developed on NIC4 Ceci Linux computer cluster of ULiège :
-http://www.ceci-hpc.be/
-using Intel Fortan v14 compiler
+The program was developed on NIC4 Ceci Linux computer cluster of ULiège : http://www.ceci-hpc.be/ using Intel Fortan v14 compiler
+
 https://software.intel.com/content/www/us/en/develop/tools/compilers/fortran-compilers.html
 Newer versions of the compiler should work but have not been tested.
 
